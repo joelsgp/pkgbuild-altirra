@@ -18,26 +18,24 @@ source=("https://www.virtualdub.org/downloads/Altirra-$pkgver.zip"
 md5sums=("fd513ed987711433cdfd4d836fd2241e"
 		"0225dc8bcf2e69fd30c12a226822222a"
 		"481cc24c9500c887eca14bef9e203f24"
-		"6ca45338a71d42b8b309cb12a2bd295e")
+		"717af042a1dc6a72944bf64868f15e1f")
 validpgpkeys=()
-
-build() {
-	unzip -o Altirra-$pkgver.zip
-	unzip -o pcxf380.zip
-	unzip -o 5200.zip
-}
 
 prepare() {
 	sed "s/{version}/$pkgver/g" altirra.desktop
+	sed "s/{home}/\/home\/$USER/g" altirra.desktop
 }
 
 package() {
-	dest=~/.local/share/altirra
-	mkdir $dest
+	home=$pkgdir/home/$USER
+	dest=$home/.local/share/altirra
+	mkdir -p $dest
 	cp -t $dest Additions.atr Altirra.chm Altirra.exe Altirra64.exe
 	cp -r extras/ $dest
-	romsdir = $dest/roms
-	mkdir $romsdir
-	cp -t $romsdir 5200.ROM ATARIBAS.ROM ATARIAOSB.ROM ATARIXL.ROM
-	cp $pkgname.desktop ~/.local/share/applications
+	romsdir=$dest/roms
+	mkdir -p $romsdir
+	cp -t $romsdir 5200.rom ATARIBAS.ROM ATARIOSB.ROM ATARIXL.ROM
+	desktop=$home/.local/share/applications
+	mkdir -p $desktop
+	cp altirra.desktop $desktop
 }
