@@ -1,7 +1,7 @@
 # Maintainer: jmcb <joelsgp@protonmail.com>
 pkgname=altirra
 pkgver=4.01
-pkgrel=1
+pkgrel=2
 pkgdesc="Altirra emulator for Atari 8-bit computers, on Wine"
 arch=('x86_64')
 url="https://www.virtualdub.org/altirra.html"
@@ -20,7 +20,7 @@ md5sums=("fd513ed987711433cdfd4d836fd2241e"
 		"0225dc8bcf2e69fd30c12a226822222a"
 		"481cc24c9500c887eca14bef9e203f24"
 		"bc678276d0f4ee32106514927de967c5"
-		"76f0b6051769fcb577121797b7d3ba49"
+		"3f2cdd96dfb3b63a332500aca6fa82ae"
 		"3b6db414cd1df3f383270fb02b45ec72"
 		"efff2f4298b001212a68f993ad0de510")
 validpgpkeys=()

@@ -1,7 +1,7 @@
 #!/bin/bash
-export WINEPREFIX="$HOME"/.altirra/wine
+export WINEPREFIX="$HOME"/.altirra
 if [ ! -d "$HOME"/.altirra ] ; then
-   mkdir -p "$HOME"/.altira/wine
+   mkdir -p "$HOME"/.altira
    wineboot -u
    regedit "/opt/altirra/firmware-setup.reg"
 fi
