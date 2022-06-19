@@ -4,7 +4,7 @@ Comment=Altirra, an 8-bit Atari computer emulator
 Exec=env WINEPREFIX=~/.altirra wine /opt/altirra/Altirra64.exe
 GenericName=Altirra
 Name=Altirra
-Icon=
+Icon=altirra.ico
 StartupNotify=true
 StartupWMClass=Altirra64.exe
 Type=Application

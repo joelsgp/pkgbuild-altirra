@@ -28,7 +28,9 @@ package() {
 	romsdir=$dest/roms
 	mkdir -p $romsdir
 	cp -t $romsdir 5200.rom ATARIBAS.ROM ATARIOSB.ROM ATARIXL.ROM
-	desktop=$pkgdir/usr/share/applications
-	mkdir -p $desktop
-	cp altirra.desktop $desktop
+	share=$pkgdir/usr/share
+	mkdir -p $share/applications
+	cp altirra.desktop $share/applications
+	mkdir -p $share/icons
+	cp program.ico $share/icons
 }
