@@ -14,12 +14,12 @@ source=("https://www.virtualdub.org/downloads/Altirra-$pkgver.zip"
 		"http://www.emulators.com/freefile/pcxf380.zip"
 		"https://atariage.com/5200/roms/5200.zip"
 		"altirra.desktop"
-		"program.ico")
+		"altirra.png")
 md5sums=("fd513ed987711433cdfd4d836fd2241e"
 		"0225dc8bcf2e69fd30c12a226822222a"
 		"481cc24c9500c887eca14bef9e203f24"
-		"0998254ade7a2fb08cdbf4c9e95cc26d"
-		"a0a2c2e28ecc7d73b9e2941862c81796")
+		"9ad9b26c45020dce1c638a92cda6fe5f"
+		"3b6db414cd1df3f383270fb02b45ec72")
 validpgpkeys=()
 
 package() {
