@@ -23,7 +23,7 @@ md5sums=("fd513ed987711433cdfd4d836fd2241e"
 validpgpkeys=()
 
 prepare() {
-	unzip -fq pcxf380.zip ATARIBAS.ROM ATARIOSB.ROM ATARIXL.ROM
+	unzip -uq pcxf380.zip ATARIBAS.ROM ATARIOSB.ROM ATARIXL.ROM
 	mv 5200.rom 5200.ROM
 }
 
@@ -41,5 +41,5 @@ package() {
 	install -Dm644 ${pkgname}.png "${share}"/icons/${pkgname}.png
 	# PATH symlink
 	install -dm755 "${pkgdir}"/usr/bin/
-	ln -s "${dest}"/altirra "${pkgdir}"/usr/bin/altirra
+	ln -s /opt/${pkgname}/altirra "${pkgdir}"/usr/bin/altirra
 }
