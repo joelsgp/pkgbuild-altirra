@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo pacman -Rs --noconfirm altirra
 rm -rf "${HOME}"/.altirra
 
