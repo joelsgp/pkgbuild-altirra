@@ -1,0 +1,3 @@
+post_install () {
+    env WINEPREFIX=~/.altirra wineboot -u
+}
