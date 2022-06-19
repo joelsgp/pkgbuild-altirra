@@ -19,7 +19,7 @@ source=("https://www.virtualdub.org/downloads/Altirra-$pkgver.zip"
 md5sums=("fd513ed987711433cdfd4d836fd2241e"
 		"0225dc8bcf2e69fd30c12a226822222a"
 		"481cc24c9500c887eca14bef9e203f24"
-		"9ad9b26c45020dce1c638a92cda6fe5f"
+		"76f0b6051769fcb577121797b7d3ba49"
 		"3b6db414cd1df3f383270fb02b45ec72"
 		"efff2f4298b001212a68f993ad0de510")
 validpgpkeys=()

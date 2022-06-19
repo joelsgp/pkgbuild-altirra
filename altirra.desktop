@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=Development;Game;Utility;
 Comment=Altirra, an 8-bit Atari computer emulator
-Exec=env WINEPREFIX=~/.altirra wine /opt/altirra/Altirra64.exe
+Exec=env WINEPREFIX=$HOME/.altirra wine /opt/altirra/Altirra64.exe
 GenericName=Altirra
 Name=Altirra
 Icon=altirra.png
