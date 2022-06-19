@@ -1,4 +1,0 @@
-post_install () {
-    env WINEPREFIX=$HOME/.altirra wineboot -u
-    env WINEPREFIX=$HOME/.altirra regedit "altirra.reg"
-}
