@@ -13,21 +13,26 @@ backup=()
 install=
 source=("https://www.virtualdub.org/downloads/Altirra-$pkgver.zip"
 		"http://www.emulators.com/freefile/pcxf380.zip"
-		"https://atariage.com/5200/roms/5200.zip")
+		"https://atariage.com/5200/roms/5200.zip"
+		"altirra.desktop")
 md5sums=("fd513ed987711433cdfd4d836fd2241e"
 		"0225dc8bcf2e69fd30c12a226822222a"
-		"481cc24c9500c887eca14bef9e203f24")
+		"481cc24c9500c887eca14bef9e203f24"
+		"6ca45338a71d42b8b309cb12a2bd295e")
 validpgpkeys=()
 
+build() {
+	unzip -o Altirra-$pkgver.zip
+	unzip -o pcxf380.zip
+	unzip -o 5200.zip
+}
+
 prepare() {
-	cd "$pkgname-$pkgver"
-	sed "s/{version}/$pkgver/g" $pkgname.desktop
-	sed "s/{name}/$pkgname/g" $pkgname.desktop
+	sed "s/{version}/$pkgver/g" altirra.desktop
 }
 
 package() {
-	cd "$pkgname-$pkgver"
-	dest=~/.local/share/$pkgname
+	dest=~/.local/share/altirra
 	mkdir $dest
 	cp -t $dest Additions.atr Altirra.chm Altirra.exe Altirra64.exe
 	cp -r extras/ $dest

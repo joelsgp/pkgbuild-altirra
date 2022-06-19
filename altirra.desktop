@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=Development;Game;Utility;
 Comment=Launch the Altirra emulator
-Exec=env WINEPREFIX="~/.local/share/{name}/wineprefix" wine ~/.local/share/{name}/Altirra64.exe
+Exec=env WINEPREFIX="~/.local/share/altirra/wineprefix" wine ~/.local/share/altirra/Altirra64.exe
 GenericName=Altirra, an 8-bit Atari computer emulator
 Icon=/home/joelm/.local/share/pico-8/lexaloffle-pico8.png
 MimeType=
