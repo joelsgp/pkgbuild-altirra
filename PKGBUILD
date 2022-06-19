@@ -13,11 +13,13 @@ install=altirra.install
 source=("https://www.virtualdub.org/downloads/Altirra-$pkgver.zip"
 		"http://www.emulators.com/freefile/pcxf380.zip"
 		"https://atariage.com/5200/roms/5200.zip"
-		"altirra.desktop")
+		"altirra.desktop"
+		"program.ico")
 md5sums=("fd513ed987711433cdfd4d836fd2241e"
 		"0225dc8bcf2e69fd30c12a226822222a"
 		"481cc24c9500c887eca14bef9e203f24"
-		"1051b6a792174dcf2dd206c5f197eed4")
+		"0998254ade7a2fb08cdbf4c9e95cc26d"
+		"a0a2c2e28ecc7d73b9e2941862c81796")
 validpgpkeys=()
 
 package() {
@@ -32,5 +34,5 @@ package() {
 	mkdir -p $share/applications
 	cp altirra.desktop $share/applications
 	mkdir -p $share/icons
-	cp program.ico $share/icons
+	cp altirra.png $share/icons
 }
